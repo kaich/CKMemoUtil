@@ -1,0 +1,12 @@
+use_frameworks!
+
+target 'CKMemoUtil_Example' do
+  pod 'CKMemoUtil', :path => '../'
+
+  target 'CKMemoUtil_Tests' do
+    inherit! :search_paths
+
+    pod 'Specta'
+    pod 'Expecta'
+  end
+end
