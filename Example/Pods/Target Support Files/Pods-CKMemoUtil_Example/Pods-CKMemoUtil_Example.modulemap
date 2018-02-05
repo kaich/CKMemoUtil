@@ -1,0 +1,6 @@
+framework module Pods_CKMemoUtil_Example {
+  umbrella header "Pods-CKMemoUtil_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -8,6 +8,6 @@
 
 @import UIKit;
 
-@interface CKMemoUtilViewController : UIViewController
+@interface CKMemoUtilViewController : UITableViewController
 
 @end

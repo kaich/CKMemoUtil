@@ -1,0 +1,6 @@
+framework module CKMemoUtil {
+  umbrella header "CKMemoUtil-umbrella.h"
+
+  export *
+  module * { export * }
+}

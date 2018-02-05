@@ -1,0 +1,41 @@
+{
+  "name": "CKMemoUtil",
+  "version": "0.1.0",
+  "summary": "A short description of CKMemoUtil.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/chengkai1853@163.com/CKMemoUtil",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "chengkai1853@163.com": "chengkai1853@163.com"
+  },
+  "source": {
+    "git": "https://github.com/chengkai1853@163.com/CKMemoUtil.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "CKMemoUtil/Classes/**/*",
+  "vendored_frameworks": "CKMemoUtil/Lib/iflyMSC.framework",
+  "vendored_libraries": [
+    "CKMemoUtil/Lib/libopencore-amrnb.a",
+    "CKMemoUtil/Lib/libopencore-amrwb.a"
+  ],
+  "frameworks": [
+    "AVFoundation",
+    "SystemConfiguration",
+    "CoreTelephony",
+    "AudioToolbox",
+    "CoreLocation",
+    "Contacts",
+    "AddressBook",
+    "QuartzCore"
+  ],
+  "libraries": [
+    "z",
+    "c++"
+  ]
+}

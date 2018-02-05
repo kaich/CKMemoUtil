@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		0671F586CAD84C49EA3E5689 /* Pods_CKMemoUtil_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71E559391CEB8C4010FD95AE /* Pods_CKMemoUtil_Tests.framework */; };
+		4D043A1B2015BE31007ACB42 /* CKSpeechSynthesizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D043A1A2015BE31007ACB42 /* CKSpeechSynthesizeViewController.m */; };
+		4D043A1E2015C6E9007ACB42 /* CKSpeechRecognizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D043A1D2015C6E9007ACB42 /* CKSpeechRecognizeViewController.m */; };
+		4D043A242015D77F007ACB42 /* 0clock_girl.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4D043A232015D77F007ACB42 /* 0clock_girl.mp3 */; };
+		4D043A272016046A007ACB42 /* CKAudioCompressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D043A262016046A007ACB42 /* CKAudioCompressViewController.m */; };
+		4D9B95872016135B0016830C /* test.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D9B95862016135B0016830C /* test.wav */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -38,7 +43,15 @@
 
 /* Begin PBXFileReference section */
 		16B232994313B3914DD23A5E /* Pods-CKMemoUtil_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CKMemoUtil_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CKMemoUtil_Tests/Pods-CKMemoUtil_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		20F8AD1BB295205C8210E9C6 /* CKMemoUtil.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = CKMemoUtil.podspec; path = ../CKMemoUtil.podspec; sourceTree = "<group>"; };
+		20F8AD1BB295205C8210E9C6 /* CKMemoUtil.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CKMemoUtil.podspec; path = ../CKMemoUtil.podspec; sourceTree = "<group>"; };
+		4D043A192015BE31007ACB42 /* CKSpeechSynthesizeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKSpeechSynthesizeViewController.h; sourceTree = "<group>"; };
+		4D043A1A2015BE31007ACB42 /* CKSpeechSynthesizeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKSpeechSynthesizeViewController.m; sourceTree = "<group>"; };
+		4D043A1C2015C6E9007ACB42 /* CKSpeechRecognizeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKSpeechRecognizeViewController.h; sourceTree = "<group>"; };
+		4D043A1D2015C6E9007ACB42 /* CKSpeechRecognizeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKSpeechRecognizeViewController.m; sourceTree = "<group>"; };
+		4D043A232015D77F007ACB42 /* 0clock_girl.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 0clock_girl.mp3; sourceTree = "<group>"; };
+		4D043A252016046A007ACB42 /* CKAudioCompressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKAudioCompressViewController.h; sourceTree = "<group>"; };
+		4D043A262016046A007ACB42 /* CKAudioCompressViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKAudioCompressViewController.m; sourceTree = "<group>"; };
+		4D9B95862016135B0016830C /* test.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = test.wav; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* CKMemoUtil_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CKMemoUtil_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -61,12 +74,12 @@
 		61FC8A9D0BA15BAA5C0EC642 /* Pods_CKMemoUtil_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CKMemoUtil_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71E559391CEB8C4010FD95AE /* Pods_CKMemoUtil_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CKMemoUtil_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		728DBD3A4AFD2401C99CA25E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		728DBD3A4AFD2401C99CA25E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		96A54351D92FD319B4D56987 /* Pods-CKMemoUtil_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CKMemoUtil_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CKMemoUtil_Example/Pods-CKMemoUtil_Example.release.xcconfig"; sourceTree = "<group>"; };
 		AEF6737C3663069A208C19B4 /* Pods-CKMemoUtil_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CKMemoUtil_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CKMemoUtil_Example/Pods-CKMemoUtil_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D0F1B5AEBF08918CE387906C /* Pods-CKMemoUtil_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CKMemoUtil_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CKMemoUtil_Tests/Pods-CKMemoUtil_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		F22F2C46A55E7D1F1AD4A6C1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F22F2C46A55E7D1F1AD4A6C1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +150,12 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* CKMemoUtilViewController.h */,
 				6003F5A6195388D20070C39A /* CKMemoUtilViewController.m */,
+				4D043A192015BE31007ACB42 /* CKSpeechSynthesizeViewController.h */,
+				4D043A1A2015BE31007ACB42 /* CKSpeechSynthesizeViewController.m */,
+				4D043A1C2015C6E9007ACB42 /* CKSpeechRecognizeViewController.h */,
+				4D043A1D2015C6E9007ACB42 /* CKSpeechRecognizeViewController.m */,
+				4D043A252016046A007ACB42 /* CKAudioCompressViewController.h */,
+				4D043A262016046A007ACB42 /* CKAudioCompressViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -148,6 +167,8 @@
 		6003F594195388D20070C39A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4D9B95862016135B0016830C /* test.wav */,
+				4D043A232015D77F007ACB42 /* 0clock_girl.mp3 */,
 				6003F595195388D20070C39A /* CKMemoUtil-Info.plist */,
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
@@ -250,6 +271,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "chengkai1853@163.com";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = P7ZM98256Z;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -279,9 +303,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D9B95872016135B0016830C /* test.wav in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				4D043A242015D77F007ACB42 /* 0clock_girl.mp3 in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -408,7 +434,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D043A1E2015C6E9007ACB42 /* CKSpeechRecognizeViewController.m in Sources */,
+				4D043A1B2015BE31007ACB42 /* CKSpeechSynthesizeViewController.m in Sources */,
 				6003F59E195388D20070C39A /* CKMemoUtilAppDelegate.m in Sources */,
+				4D043A272016046A007ACB42 /* CKAudioCompressViewController.m in Sources */,
 				6003F5A7195388D20070C39A /* CKMemoUtilViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
@@ -478,6 +507,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -518,6 +548,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -538,6 +569,7 @@
 			baseConfigurationReference = AEF6737C3663069A208C19B4 /* Pods-CKMemoUtil_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P7ZM98256Z;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CKMemoUtil/CKMemoUtil-Prefix.pch";
 				INFOPLIST_FILE = "CKMemoUtil/CKMemoUtil-Info.plist";
@@ -553,6 +585,7 @@
 			baseConfigurationReference = 96A54351D92FD319B4D56987 /* Pods-CKMemoUtil_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P7ZM98256Z;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CKMemoUtil/CKMemoUtil-Prefix.pch";
 				INFOPLIST_FILE = "CKMemoUtil/CKMemoUtil-Info.plist";

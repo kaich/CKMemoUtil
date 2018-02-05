@@ -31,12 +31,15 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'CKMemoUtil/Classes/**/*'
+  s.vendored_frameworks = 'CKMemoUtil/Lib/iflyMSC.framework'
+  s.vendored_libraries = 'CKMemoUtil/Lib/libopencore-amrnb.a', 'CKMemoUtil/Lib/libopencore-amrwb.a'
   
   # s.resource_bundles = {
   #   'CKMemoUtil' => ['CKMemoUtil/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'AVFoundation', 'SystemConfiguration', 'CoreTelephony', 'AudioToolbox', 'CoreLocation', 'Contacts', 'AddressBook', 'QuartzCore'
+  s.libraries = 'z', 'c++'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

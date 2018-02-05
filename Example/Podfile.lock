@@ -1,0 +1,22 @@
+PODS:
+  - CKMemoUtil (0.1.0)
+  - Expecta (1.0.6)
+  - Specta (1.0.7)
+
+DEPENDENCIES:
+  - CKMemoUtil (from `../`)
+  - Expecta
+  - Specta
+
+EXTERNAL SOURCES:
+  CKMemoUtil:
+    :path: ../
+
+SPEC CHECKSUMS:
+  CKMemoUtil: 39a069a03555e0361da3c68239a556fed75815c6
+  Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
+  Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
+
+PODFILE CHECKSUM: fcf27c2fc1d5919087eb08389fcb160c783c08a1
+
+COCOAPODS: 1.3.1
