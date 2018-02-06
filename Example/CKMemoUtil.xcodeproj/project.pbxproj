@@ -272,9 +272,10 @@
 				ORGANIZATIONNAME = "chengkai1853@163.com";
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
-						DevelopmentTeam = P7ZM98256Z;
+						DevelopmentTeam = 62SPJCND2J;
 					};
 					6003F5AD195388D20070C39A = {
+						DevelopmentTeam = 62SPJCND2J;
 						TestTargetID = 6003F589195388D20070C39A;
 					};
 				};
@@ -569,7 +570,7 @@
 			baseConfigurationReference = AEF6737C3663069A208C19B4 /* Pods-CKMemoUtil_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = P7ZM98256Z;
+				DEVELOPMENT_TEAM = 62SPJCND2J;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CKMemoUtil/CKMemoUtil-Prefix.pch";
 				INFOPLIST_FILE = "CKMemoUtil/CKMemoUtil-Info.plist";
@@ -585,7 +586,7 @@
 			baseConfigurationReference = 96A54351D92FD319B4D56987 /* Pods-CKMemoUtil_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = P7ZM98256Z;
+				DEVELOPMENT_TEAM = 62SPJCND2J;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CKMemoUtil/CKMemoUtil-Prefix.pch";
 				INFOPLIST_FILE = "CKMemoUtil/CKMemoUtil-Info.plist";
@@ -601,6 +602,7 @@
 			baseConfigurationReference = D0F1B5AEBF08918CE387906C /* Pods-CKMemoUtil_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 62SPJCND2J;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -625,6 +627,7 @@
 			baseConfigurationReference = 16B232994313B3914DD23A5E /* Pods-CKMemoUtil_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 62SPJCND2J;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
