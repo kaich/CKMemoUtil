@@ -7,7 +7,7 @@
 //
 
 #import "CKSpeechRecognizeViewController.h"
-#import <CKMemoUtil/CKMenoUtil.h>
+#import <CKMemoUtil/CKMemoUtil.h>
 
 @interface CKSpeechRecognizeViewController ()
 @property(nonatomic, strong) CKSpeechRecognizer * recognizer;
@@ -38,7 +38,7 @@
 
 - (IBAction)start:(id)sender {
     _tvContent.text = @"开始识别";
-    self.recognizer = [CKMenoUtil.shared createSpeechRecognizer];
+    self.recognizer = [CKMemoUtil.shared createSpeechRecognizer];
     __weak typeof(self) weakSelf = self;
     [self.recognizer setCompleteBlock:^(NSString * message) {
         weakSelf.tvContent.text = message;

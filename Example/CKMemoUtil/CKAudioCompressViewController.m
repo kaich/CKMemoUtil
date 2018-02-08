@@ -8,7 +8,7 @@
 
 #import "CKAudioCompressViewController.h"
 #import <AVKit/AVKit.h>
-#import <CKMemoUtil/CKMenoUtil.h>
+#import <CKMemoUtil/CKMemoUtil.h>
 
 @interface CKAudioCompressViewController ()
 {
@@ -59,7 +59,7 @@
 - (IBAction)compress:(id)sender {
     NSString * wavePath = [[self waveURL] path];
     NSString * toPath = [_compressedURL path];
-    [CKMenoUtil.shared compressWavePath:wavePath toPath:toPath];
+    [CKMemoUtil.shared compressWavePath:wavePath toPath:toPath];
 
     unsigned long long waveFileSize = [[[NSFileManager defaultManager] attributesOfItemAtPath:wavePath error:nil] fileSize];
     unsigned long long toFileSize = [[[NSFileManager defaultManager] attributesOfItemAtPath:toPath error:nil] fileSize];

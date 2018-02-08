@@ -5,7 +5,7 @@
 //  Created by mk on 2018/1/22.
 //
 
-#import "CKMenoUtil.h"
+#import "CKMemoUtil.h"
 #import <iflyMSC/IFlyMSC.h>
 #import "VoiceConvert.h"
 
@@ -14,18 +14,18 @@
 #define CompressionVideoPath [NSHomeDirectory() stringByAppendingFormat:@"/Documents/CompressionVideoField"]
 
 
-static CKMenoUtil *SharedInstance = nil;
+static CKMemoUtil *SharedInstance = nil;
 
-@interface CKMenoUtil()
+@interface CKMemoUtil()
 
 @property(nonatomic, strong) CKSpeechSynthesizer * speechSynthesizer;
 @property(nonatomic, strong) CKSpeechRecognizer * speechRecognizer;
 
 @end
 
-@implementation CKMenoUtil
+@implementation CKMemoUtil
 
-+(CKMenoUtil *) shared {
++(CKMemoUtil *) shared {
     @synchronized(self){
         if (!SharedInstance) {
             SharedInstance = [[self alloc] init];
@@ -75,8 +75,6 @@ static CKMenoUtil *SharedInstance = nil;
 - (void)compressedVideoOtherMethodWithURL:(NSURL *)url compressionType:(NSString *)compressionType compressionResultPath:(CompressionSuccessBlock)resultPathBlock {
     
     NSString *resultPath;
-    NSData *data = [NSData dataWithContentsOfURL:url];
-    CGFloat totalSize = (float)data.length / 1024 / 1024;
     AVURLAsset *avAsset = [AVURLAsset URLAssetWithURL:url options:nil];
     NSArray *compatiblePresets = [AVAssetExportSession exportPresetsCompatibleWithAsset:avAsset];
     
@@ -103,9 +101,8 @@ static CKMenoUtil *SharedInstance = nil;
         [exportSession exportAsynchronouslyWithCompletionHandler:^(void) {
              if (exportSession.status == AVAssetExportSessionStatusCompleted) {
                  float kbSize = [self getFileSize: resultPath];
-                 float memorySize = kbSize / 1024 / 1024;
-                 NSLog(@"视频压缩后大小 %f", memorySize);
-                 resultPathBlock (resultPath, memorySize);
+                 NSLog(@"视频压缩后大小 %f", kbSize);
+                 resultPathBlock (resultPath, kbSize);
              } else {
                  NSLog(@"压缩失败");
              }

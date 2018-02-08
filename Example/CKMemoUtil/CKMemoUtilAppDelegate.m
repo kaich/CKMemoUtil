@@ -7,14 +7,14 @@
 //
 
 #import "CKMemoUtilAppDelegate.h"
-#import <CKMemoUtil/CKMenoUtil.h>
+#import <CKMemoUtil/CKMemoUtil.h>
 
 @implementation CKMemoUtilAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    [CKMenoUtil.shared setup];
+    [CKMemoUtil.shared setup];
     return YES;
 }
 

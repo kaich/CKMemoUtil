@@ -11,9 +11,9 @@
 
 typedef void(^CompressionSuccessBlock)(NSString* path, long long size);
 
-@interface CKMenoUtil : NSObject
+@interface CKMemoUtil : NSObject
 
-+(CKMenoUtil *) shared;
++(CKMemoUtil *) shared;
 
 -(void) setup;
 

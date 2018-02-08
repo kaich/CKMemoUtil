@@ -13,6 +13,7 @@
 		4D043A242015D77F007ACB42 /* 0clock_girl.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4D043A232015D77F007ACB42 /* 0clock_girl.mp3 */; };
 		4D043A272016046A007ACB42 /* CKAudioCompressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D043A262016046A007ACB42 /* CKAudioCompressViewController.m */; };
 		4D9B95872016135B0016830C /* test.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D9B95862016135B0016830C /* test.wav */; };
+		4DC197AA202BD94F00A1D8D4 /* CKVideoCompressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC197A9202BD94F00A1D8D4 /* CKVideoCompressViewController.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -52,6 +53,8 @@
 		4D043A252016046A007ACB42 /* CKAudioCompressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKAudioCompressViewController.h; sourceTree = "<group>"; };
 		4D043A262016046A007ACB42 /* CKAudioCompressViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKAudioCompressViewController.m; sourceTree = "<group>"; };
 		4D9B95862016135B0016830C /* test.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = test.wav; sourceTree = "<group>"; };
+		4DC197A8202BD94F00A1D8D4 /* CKVideoCompressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKVideoCompressViewController.h; sourceTree = "<group>"; };
+		4DC197A9202BD94F00A1D8D4 /* CKVideoCompressViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKVideoCompressViewController.m; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* CKMemoUtil_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CKMemoUtil_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -156,6 +159,8 @@
 				4D043A1D2015C6E9007ACB42 /* CKSpeechRecognizeViewController.m */,
 				4D043A252016046A007ACB42 /* CKAudioCompressViewController.h */,
 				4D043A262016046A007ACB42 /* CKAudioCompressViewController.m */,
+				4DC197A8202BD94F00A1D8D4 /* CKVideoCompressViewController.h */,
+				4DC197A9202BD94F00A1D8D4 /* CKVideoCompressViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -438,6 +443,7 @@
 				4D043A1E2015C6E9007ACB42 /* CKSpeechRecognizeViewController.m in Sources */,
 				4D043A1B2015BE31007ACB42 /* CKSpeechSynthesizeViewController.m in Sources */,
 				6003F59E195388D20070C39A /* CKMemoUtilAppDelegate.m in Sources */,
+				4DC197AA202BD94F00A1D8D4 /* CKVideoCompressViewController.m in Sources */,
 				4D043A272016046A007ACB42 /* CKAudioCompressViewController.m in Sources */,
 				6003F5A7195388D20070C39A /* CKMemoUtilViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,

@@ -7,7 +7,7 @@
 //
 
 #import "CKSpeechSynthesizeViewController.h"
-#import <CKMemoUtil/CKMenoUtil.h>
+#import <CKMemoUtil/CKMemoUtil.h>
 
 @interface CKSpeechSynthesizeViewController ()
 @property (weak, nonatomic) IBOutlet UITextView *tvMessage;
@@ -36,7 +36,7 @@
 }
 */
 - (IBAction)start:(id)sender {
-    self.speechSynthesizer = [[CKMenoUtil shared] createSpeechSynthesizer];
+    self.speechSynthesizer = [[CKMemoUtil shared] createSpeechSynthesizer];
 }
 
 - (IBAction)stop:(id)sender {

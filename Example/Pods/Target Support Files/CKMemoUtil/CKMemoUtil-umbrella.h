@@ -16,9 +16,10 @@
 #import "dec_if.h"
 #import "if_rom.h"
 #import "VoiceConvert.h"
-#import "CKMenoUtil.h"
+#import "CKMemoUtil.h"
 #import "CKSpeechRecognizer.h"
 #import "CKSpeechSynthesizer.h"
+#import "NSString+ISR.h"
 
 FOUNDATION_EXPORT double CKMemoUtilVersionNumber;
 FOUNDATION_EXPORT const unsigned char CKMemoUtilVersionString[];

@@ -26,6 +26,59 @@
             </objects>
             <point key="canvasLocation" x="-879" y="724"/>
         </scene>
+        <!--Video Compress View Controller-->
+        <scene sceneID="Lsr-0k-GVX">
+            <objects>
+                <viewController id="Pbx-M8-X6F" customClass="CKVideoCompressViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PSj-To-9eh"/>
+                        <viewControllerLayoutGuide type="bottom" id="dID-lc-xVG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7HX-Pt-hxl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NB7-Hi-7fN">
+                                <rect key="frame" x="46" y="154" width="276" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1xy-BY-yh7">
+                                <rect key="frame" x="49" y="205" width="276" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8dD-Lq-3Xo">
+                                <rect key="frame" x="172" y="318" width="31" height="30"/>
+                                <state key="normal" title="压缩"/>
+                                <connections>
+                                    <action selector="clickCompress:" destination="Pbx-M8-X6F" eventType="touchUpInside" id="StJ-32-dcb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8dD-Lq-3Xo" firstAttribute="centerX" secondItem="7HX-Pt-hxl" secondAttribute="centerX" id="6qx-K4-6jq"/>
+                            <constraint firstItem="NB7-Hi-7fN" firstAttribute="leading" secondItem="7HX-Pt-hxl" secondAttribute="leadingMargin" constant="30" id="DDc-A0-2g5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1xy-BY-yh7" secondAttribute="trailing" constant="34" id="Nkf-Uf-fjt"/>
+                            <constraint firstItem="1xy-BY-yh7" firstAttribute="top" secondItem="NB7-Hi-7fN" secondAttribute="bottom" constant="30" id="Vz1-r8-ZhX"/>
+                            <constraint firstItem="8dD-Lq-3Xo" firstAttribute="centerY" secondItem="7HX-Pt-hxl" secondAttribute="centerY" id="Yau-0i-dPt"/>
+                            <constraint firstItem="NB7-Hi-7fN" firstAttribute="top" secondItem="PSj-To-9eh" secondAttribute="bottom" constant="90" id="gRR-J2-a7P"/>
+                            <constraint firstItem="1xy-BY-yh7" firstAttribute="leading" secondItem="7HX-Pt-hxl" secondAttribute="leadingMargin" constant="33" id="oIr-hT-Ryb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NB7-Hi-7fN" secondAttribute="trailing" constant="37" id="sSk-VI-Sd6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblFinalSize" destination="1xy-BY-yh7" id="fNe-hz-3Cp"/>
+                        <outlet property="lblOriginSize" destination="NB7-Hi-7fN" id="zzZ-eh-NyK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="suR-E4-p9y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-82.400000000000006" y="-101.19940029985008"/>
+        </scene>
         <!--Memo Util View Controller-->
         <scene sceneID="0WD-l4-Vyj">
             <objects>
@@ -104,6 +157,29 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="iqa-5w-agy" kind="show" id="9YY-ds-DgY"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="ck6-JQ-INJ">
+                                        <rect key="frame" x="0.0" y="132" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ck6-JQ-INJ" id="4AQ-cZ-BZS">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="视频压缩" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lP6-GD-yfJ">
+                                                    <rect key="frame" x="16" y="12" width="70" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="lP6-GD-yfJ" firstAttribute="centerY" secondItem="4AQ-cZ-BZS" secondAttribute="centerY" id="Jof-LL-hiJ"/>
+                                                <constraint firstItem="lP6-GD-yfJ" firstAttribute="leading" secondItem="4AQ-cZ-BZS" secondAttribute="leadingMargin" id="eTA-yj-Lc3"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Pbx-M8-X6F" kind="show" id="Cet-mK-9gO"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -259,10 +335,10 @@
                                 <rect key="frame" x="16" y="20" width="343" height="518"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">长征十一号火箭总指挥杨毅强表示，这次发射的6颗商业卫星涉及到4家用户、多种用途，发射服务样式复杂。验证了“2主星+N立方星”的卫星组合方式，相较之前的“1主星+2微纳卫星+N立方星”方式，进一步提升了长征十一号的多星发射能力。
+                                <string key="text">长征十一号火箭总指挥杨毅强表示，这次发射的6颗商业卫星涉及到4家用户、多种用途，发射服务样式复杂。验证了“2主星+N立方星”的卫星组合方式，相较之前的“1主星+2微纳卫星+N立方星”方式，进一步提升了长征十一号的多星发射能力。
 相比液体燃料火箭以月计算的发射准备周期，固体燃料提前填充在火箭内，可长期贮存，免去了燃料加注等流程，发射准备时间缩短至数天。
 长征十一号在充分发挥固体燃料优势的基础上，对全箭特别是电气系统采用了一体化、集成化、智能化设计，让箭上单机数量比普通液体火箭少了一半左右。这不仅让火箭的可靠性大幅提高，还进一步减少了发射测试准备工作，再加上与多种卫星快速对接等能力，使长征十一号最短发射时间突破24小时大关，优于美国同类火箭3天发射准备时间，成为世界上“最快”的火箭之一。同时，长十一火箭从接到订单到实施发射的时间只需90天，发射场有效工作天数缩短至个位，大大提升了火箭的履约能力。
-通过技术创新, 长征十一号火箭的运载能力较之前提升了20%，卫星适应性、系统可靠性、发射经济性和履约能力大幅提高。因此，长征十一号在应对自然灾害、突发事件的应急发射任务中具有巨大优势，在商业航天领域也有着强大的竞争力。</mutableString>
+通过技术创新, 长征十一号火箭的运载能力较之前提升了20%，卫星适应性、系统可靠性、发射经济性和履约能力大幅提高。因此，长征十一号在应对自然灾害、突发事件的应急发射任务中具有巨大优势，在商业航天领域也有着强大的竞争力。</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
